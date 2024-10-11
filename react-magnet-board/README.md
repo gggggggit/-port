@@ -1,7 +1,5 @@
 # React Magnet Board
 
-AI 서비스 개발실 웹팀에서 개발한 리액트 마그넷 보드 입니다.
-
 ## 이용가능한 명령어
 
 프로젝트 루트에서 실행:
@@ -21,51 +19,6 @@ npm에 배포전에 실행되어야 할 작업 입니다.
 로컬에서 배포용 빌드에 대한 프리뷰 서버를 실행합니다.
 
 ### `yarn npm publish`
-
-yarn build로 나온 결과물을 npm에 게시합니다.
-
-## 사용방법
-
-1. react-magnet-board의 npm 레지스트리 서버를 https://repo.ncsoft.net/artifactory/api/npm/aibiz-npm-local/ 로 설정
-
-2. yarn add react-magnet-board
-
-   > 또는 npm install react-manget-board
-
-3. component 와 style import
-
-   ```
-   import { MagnetBoard } from 'react-magnet-board';
-   import 'react-magnet-board/dist/style.css';
-   ...
-
-   const POST_IT_TYPE_ITEMS = {
-     TEST: TestComponent,
-   };
-
-   const MyComponent = () => {
-     const [postItList, setPostItList] = useState([{
-       id: INIT_ID_1,
-       title: '테스트',
-       type: 'TEST',
-       left: 0,
-       top: 0,
-       order: 0,
-       width: 300,
-       height: 300,
-       activeTabId: INIT_ID_1,
-       tabLeft: 0,
-       tabWidth: DEFAULT_TAB_MAX_WIDTH,
-    });
-
-    return <MagnetBoard
-      postItList={postItList}
-      postItTypeItems={POST_IT_TYPE_ITEMS}
-      onChangePostItList={setPostItList}
-    />
-   }
-   export default MyComponent;
-   ```
 
 ## API
 
